@@ -1,0 +1,17 @@
+/* -- Colors -- */
+
+:root {
+  /* Dark Mode */
+  --background_color: #0D141F;
+  --subtle_color: #111A27;
+  --ui_element: #112840;
+  --hovered_element: #113555;
+  --active-select_bg: #154467;
+  --subtle_border-separator: #1B537B;
+  --ui_border-focus: #1F6692;
+  --hovered_border: #197CAE;
+  --solid_bg: #7CE2FE;
+  --hovered-solid_bg: #A8EEFF;
+  --secondary_text: #75C7F0;
+  --primary_text: #C2F3FF;
+}

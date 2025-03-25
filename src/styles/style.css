@@ -1,11 +1,9 @@
-@import url('./utils/_colors.css');
+@import url('./utils/_variables.css');
+@import url(./header.css);
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  background-color: var(--background_color);
-
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="light">
 
 <head>
   <meta charset="UTF-8">
@@ -11,38 +11,138 @@
 </head>
 
 <body>
-  <header>
-    <h1>Corentin</h1>
+  <!-- Voir pour créer une Nav Flottante  -->
+  <!-- <nav>
+    <p>À propos</p>
+    <p>Projets</p>
+    <p>Hobbies</p>
+    <p>Contact</p>
+  </nav> -->
 
-    <nav>
-      <p>À propos</p>
-      <p>Projets</p>
-      <p>Hobbies</p>
-      <p>Contact</p>
-    </nav>
+  <header>
+    <h1 class="header__title">Corentin Marlière</h1>
+    <section class="header__link">
+      <a class="link__icon" href="https://github.com/Corentin-Marliere">
+        <img src="./assets/icons/icon_github.png" alt="Redirection vers mon github"></a>
+      <a class="link__icon" href="https://www.linkedin.com/in/corentin-ma/">
+        <img src="./assets/icons/icon_linkedin.png" alt="Logo de Linkedin"></a>
+    </section>
   </header>
 
   <main>
-    <section class="home">
-    </section>
+    <article class="home">
+      <div class="home__intro">
+        <p>Hello Moi c'est Corentin MARLIERE !</p>
+        <p>Futur Développeur Web</p>
+        <p>Bienvenue sur mon Portfolio !</p>
+      </div>
+      <button><a href="./assets/cv/CV_Corentin-Marliere_Alternance.pdf">Télécharger le CV</a></button>
+      <button><a href="#about-me">À propos de moi</a></button>
 
-    <section class="about-me">
-    </section>
+      <img style="width: 10%;" src="./assets/images/EURATECH1314.jpg" alt="Photo de Corentin Marliere.">
+    </article>
 
-    <section class="skills">
-    </section>
+    <article id="about-me" class="about-me">
+      <section class="about__contact">
+        <p>Jeune de 28 ans et en pleine reconversion professionnelle !</p>
+        <p> Après plusieurs années dans la restauration, une envie de renouveau et une passion pour l'informatique m'ont
+          donné le courage de me lancer afin de réaliser un rêves et reprendre mes études dans le développement Web !
+        </p>
+      </section>
 
-    <section class="journey">
-    </section>
+      <button><a href="#journey">Mon parcours</a></button>
+      <button><a href="#contact">Me contacter</a></button>
+    </article>
 
-    <section class="contact">
-    </section>
+    <article class="skills">
+      <section class="skills__hard">
+
+      </section>
+
+      <section class="soft">
+
+      </section>
+    </article>
+
+    <article id="journey" class="journey">
+      <section class="journey__studies">
+        <div class="journey__container studies__Wac">
+          <h3>Web@cademie by Epitech</h3>
+          <p>2024 - 2026</p>
+          <p><span>Diplôme RNCP :</span> développeur WEB</p>
+          <p>Obtention prévu en 2026</p>
+        </div>
+
+        <div class="journey__container studies__Bafa">
+          <h3>BAFA</h3>
+          <p>Avril 2017</p>
+          <p><span>Diplôme :</span> brevet d'aptitude aux fonctions d'animateur</p>
+          <p>Obtention du BAFA</p>brevet
+        </div>
+
+        <div class="journey__container studies__LHT">
+          <h3>Lycée Hôtelier du Touquet</h3>
+          <p>2011 - 2014</p>
+          <p><span>Diplôme :</span> service et commercialisation en restauration</p>
+          <p>Obtention du BEP en 2013</p>
+          <p>Obtention du BAC en 2014</p>
+        </div>
+      </section>
+
+      <section class="journey__pro-exp">
+        <div class="journey__container pro-exp__Wac">
+          <h3>Web@cademie by Epitech</h3>
+          <p>Novembre 2024 à Ajourd'hui</p>
+          <p>Acquisition de compétences dans le développement Web</p>
+          <p>Travail pratique en autonomie grâce au travail en projets, cette formation nous apprend à travailler comme
+            en entreprise. Apprentissage de plusieurs languages (PHP, Javascript, SQL, etc.)</p>
+        </div>
+
+        <div class="journey__container pro-exp__Flore">
+          <h3>Le Flore, Cambrai</h3>
+          <h4>Serveur de Bar - Brasserie</h4>
+          <p>Juillet 2020 - Octobre 2024</p>
+          <p>Cet emploi m’a amené plus de responsabilités (Gestion des stocks et
+            commandes fournisseurs) ; J’ai également été amené à travailler seul
+            mais aussi avec une équipe sous ma direction.</p>
+        </div>
+
+        <div class="journey__container pro-exp__Flambee">
+          <h3>La Flambée, Cambrai</h3>
+          <h4>Serveur de restaurant</h4>
+          <p>Juin 2018 - Juillet 2020</p>
+          <p>Lors de cet emploi, j’ai appris à être en contact avec la clientèle mais
+            surtout à réussir à répondre à ses besoins. J’ai également appris à
+            m’adapter dans toutes situations.</p>
+        </div>
+
+        <div class="journey__container pro-exp__Ifac">
+          <h3>IFAC Nord, Cambrai</h3>
+          <h4>Animateur périscolaire </h4>
+          <p>Septembre 2014 - Juin 2018</p>
+          <p>Après un service civique chez IFAC Nord, un contrat m'a été proposé.</p>
+          <p>Cette emploiu m'aura permit de financer mon permis après ma scolarité (obligatoire en restauration) en plus
+            de me permettre de m'imisser dans le monde du travail !</p>
+        </div>
+
+      </section>
+
+
+    </article>
+
+    <article id="contact" class="contact">
+      <form action="">
+
+      </form>
+    </article>
 
   </main>
 
   <footer>
-
+    <h3>By Corentin Marliere !</h3>
+    <p> © Corentin Marlière. Tous droits réservés.</p>
   </footer>
+
 </body>
 
 </html>

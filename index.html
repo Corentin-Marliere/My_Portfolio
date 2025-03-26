@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="light">
+<html lang="fr" class="">
 
 <head>
   <meta charset="UTF-8">
@@ -15,17 +15,17 @@
   <!-- <nav>
     <p>À propos</p>
     <p>Projets</p>
-    <p>Hobbies</p>
+    <p>Hobbies</p
     <p>Contact</p>
   </nav> -->
 
   <header>
     <h1 class="header__title">Corentin Marlière</h1>
     <section class="header__link">
-      <a class="link__icon" href="https://github.com/Corentin-Marliere">
-        <img src="./assets/icons/icon_github.png" alt="Redirection vers mon github"></a>
-      <a class="link__icon" href="https://www.linkedin.com/in/corentin-ma/">
-        <img src="./assets/icons/icon_linkedin.png" alt="Logo de Linkedin"></a>
+      <a href="https://github.com/Corentin-Marliere">
+        <img class="link__icon" src="./assets/icons/icon_github.png" alt="Redirection vers mon github"></a>
+      <a href="https://www.linkedin.com/in/corentin-ma/">
+        <img class="link__icon" src="./assets/icons/icon_linkedin.png" alt="Logo de Linkedin"></a>
     </section>
   </header>
 
@@ -36,10 +36,19 @@
         <p>Futur Développeur Web</p>
         <p>Bienvenue sur mon Portfolio !</p>
       </div>
-      <button><a href="./assets/cv/CV_Corentin-Marliere_Alternance.pdf">Télécharger le CV</a></button>
-      <button><a href="#about-me">À propos de moi</a></button>
 
-      <img style="width: 10%;" src="./assets/images/EURATECH1314.jpg" alt="Photo de Corentin Marliere.">
+      <div class="home__more">
+        <img class="more__pict" src="./assets/images/EURATECH1314.jpg" alt="Photo de Corentin Marliere.">
+
+        <div class="more__link">
+          <button class="link__btn button">
+            <a href="" download="./assets/cv/CV_Corentin-Marliere_Alternance.pdf">Télécharger le CV</a>
+          </button>
+          <button class="link__btn button">
+            <a href="#about-me">À propos de moi</a>
+          </button>
+        </div>
+      </div>
     </article>
 
     <article id="about-me" class="about-me">
@@ -62,6 +71,9 @@
       <section class="soft">
 
       </section>
+    </article>
+
+    <article class="projects">
     </article>
 
     <article id="journey" class="journey">

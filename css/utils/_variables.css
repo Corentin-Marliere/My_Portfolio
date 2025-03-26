@@ -1,56 +1,56 @@
 @layer base {
   :root {
-    --background: #F0F8FF;
-    --foreground: #0A1C33;
-    --muted: #E0E8EB;
-    --muted-foreground: #525C66;
-    --popover: #F0F7FF;
-    --popover-foreground: #08192E;
-    --card: #FFFFFF;
-    --card-foreground: #08192E;
-    --border: #D9E0E3;
-    --input: #D9E0E3;
-    --primary: #274D7A;
-    --primary-foreground: #FFFFFF;
-    --secondary: #D4DCE0;
-    --secondary-foreground: #454A4E;
-    --accent: #5887B0;
-    --accent-foreground: #FFFFFF;
-    --destructive: #C63131;
-    --destructive-foreground: #FFFFFF;
-    --ring: #15457A;
-    --chart-1: #15457A;
-    --chart-2: #349E86;
-    --chart-3: #6FA2B6;
-    --chart-4: #2D9B82;
-    --chart-5: #154A7A;
-    --radius: 0.5rem;
+    --background: #f0f8ff; /* Bleu très clair, fond doux */
+    --foreground: #2c3e50; /* Bleu foncé, texte principal */
+    --muted: #e1f5fe; /* Bleu clair, arrière-plans secondaires */
+    --muted-foreground: #778899; /* Gris bleuté, texte secondaire */
+    --popover: #ffffff; /* Blanc, menus déroulants et infobulles */
+    --popover-foreground: #2c3e50; /* Bleu foncé, texte des popovers */
+    --card: #ffffff; /* Blanc, cartes et panneaux */
+    --card-foreground: #2c3e50; /* Bleu foncé, texte des cartes */
+    --border: #cce0f5; /* Bleu clair, bordures */
+    --input: #e1f5fe; /* Bleu clair, champs de formulaire */
+    --primary: #3498db; /* Bleu vif, actions principales */
+    --primary-foreground: #ffffff; /* Blanc, texte sur les éléments primaires */
+    --secondary: #a9cce3; /* Bleu clair, actions secondaires */
+    --secondary-foreground: #2c3e50; /* Bleu foncé, texte sur les éléments secondaires */
+    --accent: #2980b9; /* Bleu moyen, surbrillances et éléments interactifs */
+    --accent-foreground: #ffffff; /* Blanc, texte sur les éléments d'accentuation */
+    --destructive: #e74c3c; /* Rouge, actions dangereuses et alertes */
+    --destructive-foreground: #ffffff; /* Blanc, texte sur les éléments destructifs */
+    --ring: #3498db; /* Bleu vif, mise en évidence du focus */
+    --chart-1: #3498db; /* Bleu vif, graphiques */
+    --chart-2: #2980b9; /* Bleu moyen, graphiques */
+    --chart-3: #85c1e9; /* Bleu clair, graphiques */
+    --chart-4: #1f618d; /* Bleu foncé, graphiques */
+    --chart-5: #34495e; /* Bleu gris, graphiques */
+    --radius: 0.5rem; /* Rayon des bordures arrondies */
   }
 
   .dark {
-    --background: #08182E;
-    --foreground: #E0E8FF;
-    --muted: #1F364A;
-    --muted-foreground: #A6B4C2;
-    --popover: #0A1933;
-    --popover-foreground: #FFFFFF;
-    --card: #111D2A;
-    --card-foreground: #FFFFFF;
-    --border: #262E33;
-    --input: #262E33;
-    --primary: #225187;
-    --primary-foreground: #E1F0FF;
-    --secondary: #31373C;
-    --secondary-foreground: #C2D4E0;
-    --accent: #252D33;
-    --accent-foreground: #C2D1E0;
-    --destructive: #F00A1A;
-    --destructive-foreground: #FFFFFF;
-    --ring: #15457A;
-    --chart-1: #255587;
-    --chart-2: #26364A;
-    --chart-3: #588BB3;
-    --chart-4: #1C2028;
-    --chart-5: #154A7A;
+    --background: #2c3e50; /* Bleu foncé, fond sombre */
+    --foreground: #e1f5fe; /* Bleu clair, texte principal en mode sombre */
+    --muted: #34495e; /* Bleu gris, arrière-plans secondaires en mode sombre */
+    --muted-foreground: #a9cce3; /* Bleu clair, texte secondaire en mode sombre */
+    --popover: #34495e; /* Bleu gris, popovers en mode sombre */
+    --popover-foreground: #e1f5fe; /* Bleu clair, texte des popovers en mode sombre */
+    --card: #2c3e50; /* Bleu foncé, cartes en mode sombre */
+    --card-foreground: #e1f5fe; /* Bleu clair, texte des cartes en mode sombre */
+    --border: #4a6572; /* Bleu gris, bordures en mode sombre */
+    --input: #34495e; /* Bleu gris, champs de formulaire en mode sombre */
+    --primary: #5dade2; /* Bleu clair, actions principales en mode sombre */
+    --primary-foreground: #2c3e50; /* Bleu foncé, texte sur les éléments primaires en mode sombre */
+    --secondary: #a9cce3; /* Bleu clair, actions secondaires en mode sombre */
+    --secondary-foreground: #2c3e50; /* Bleu foncé, texte sur les éléments secondaires en mode sombre */
+    --accent: #3498db; /* Bleu vif, surbrillances en mode sombre */
+    --accent-foreground: #2c3e50; /* Bleu foncé, texte sur les éléments d'accentuation en mode sombre */
+    --destructive: #f08080; /* Rouge clair, actions dangereuses en mode sombre */
+    --destructive-foreground: #2c3e50; /* Bleu foncé, texte sur les éléments destructifs en mode sombre */
+    --ring: #5dade2; /* Bleu clair, mise en évidence du focus en mode sombre */
+    --chart-1: #5dade2; /* Bleu clair, graphiques en mode sombre */
+    --chart-2: #3498db; /* Bleu vif, graphiques en mode sombre */
+    --chart-3: #85c1e9; /* Bleu clair, graphiques en mode sombre */
+    --chart-4: #1f618d; /* Bleu foncé, graphiques en mode sombre */
+    --chart-5: #34495e; /* Bleu gris, graphiques en mode sombre */
   }
 }

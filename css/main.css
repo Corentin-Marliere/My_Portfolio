@@ -1,5 +1,6 @@
 @import url('./utils/_variables.css');
 @import url(./partials/_header.css);
+@import url(./partials/_toogle_btn.css);
 @import url(./partials/_footer.css);
 
 * {
@@ -34,11 +35,11 @@ main {
   /* Animation fluide */
 }
 
-button:hover {
+.button:hover {
   background-color: var(--accent);
 }
 
-button a {
+.button a {
   color: var(--primary-foreground);
   text-decoration: none;
 }

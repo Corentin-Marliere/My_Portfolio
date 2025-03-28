@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="">
+<html lang="fr" class="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -23,135 +23,205 @@
     <h1 class="header__title">Corentin Marlière</h1>
     <section class="header__link">
       <a href="https://github.com/Corentin-Marliere">
-        <img class="link__icon" src="./assets/icons/icon_github.png" alt="Redirection vers mon github"></a>
+        <img class="link__icon" src="./assets/icons/logo_github.png" alt="Redirection vers mon github"></a>
       <a href="https://www.linkedin.com/in/corentin-ma/">
-        <img class="link__icon" src="./assets/icons/icon_linkedin.png" alt="Logo de Linkedin"></a>
+        <img class="link__icon" src="./assets/icons/logo_linkedin.png" alt="Logo de Linkedin"></a>
     </section>
   </header>
 
   <main>
-    <article class="home">
+    <section class="home card">
       <div class="home__intro">
         <p>Hello Moi c'est Corentin MARLIERE !</p>
         <p>Futur Développeur Web</p>
         <p>Bienvenue sur mon Portfolio !</p>
-      </div>
-
-      <div class="home__more">
-        <img class="more__pict" src="./assets/images/EURATECH1314.jpg" alt="Photo de Corentin Marliere.">
-
-        <div class="more__link">
+        <div class="intro__link">
           <button class="link__btn button">
-            <a href="" download="./assets/cv/CV_Corentin-Marliere_Alternance.pdf">Télécharger le CV</a>
+            <a href="./assets/cv/CV_Corentin-Marliere_Alternance.pdf"
+              download="Corentin Marliere - CV Alternance">Télécharger le CV</a>
           </button>
           <button class="link__btn button">
             <a href="#about-me">À propos de moi</a>
           </button>
         </div>
       </div>
-    </article>
 
-    <article id="about-me" class="about-me">
-      <section class="about__contact">
+      <div class="home__">
+        <img class="more__pict" src="./assets/images/EURATECH1314.jpg" alt="Photo de Corentin Marliere.">
+      </div>
+    </section>
+
+    <h2>À propos de moi</h2>
+    <section id="about-me" class="about-me card">
+      <article class="about__contact">
         <p>Jeune de 28 ans et en pleine reconversion professionnelle !</p>
         <p> Après plusieurs années dans la restauration, une envie de renouveau et une passion pour l'informatique m'ont
           donné le courage de me lancer afin de réaliser un rêves et reprendre mes études dans le développement Web !
         </p>
-      </section>
+      </article>
 
-      <button><a href="#journey">Mon parcours</a></button>
-      <button><a href="#contact">Me contacter</a></button>
-    </article>
+      <button class="button"><a href="#journey">Mon parcours</a></button>
+      <button class="button"><a href="#contact">Me contacter</a></button>
+    </section>
 
-    <article class="skills">
-      <section class="skills__hard">
+    <h2 class="skills__title">Mes compétences</h2>
+    <section class="skills">
+      <article class="skills__hard card">
+        <h4 class="skills__subtitle">Hard Skills</h4>
+        <div class="skill__card">
+          <img class="skill__icon" src="./assets/icons/icon_html.png" alt="Icône du logo HTML">
+          <p class="skill__name">HTML</p>
+        </div>
+        <div sclass="skill__card">
+          <img class="skill__icon" src="./assets/icons/icon_css.png" alt="Icône du logo CSS">
+          <p class="skill__name">CSS</p>
+        </div>
+        <div class="skill__card">
+          <img class="skill__icon" src="./assets/icons/icon_php.png" alt="Icône du logo PHP">
+          <p class="skill__name">PHP</p>
+        </div>
+        <div class="skill__card">
+          <img class="skill__icon" src="./assets/icons/icon_mysql.png" alt="Icône du logo MySQL">
+          <p class="skill__name">MySQL</p>
+        </div>
+        <div class="skill__card">
+          <img class="skill__icon" src="./assets/icons/icon_javascript.png" alt="Icône du logo JavaScript">
+          <p class="skill__name">Javascript</p>
+        </div>
+        <div class="skill__card">
+          <img class="skill__icon" src="./assets/icons/icon_github.png" alt="Icône du logo Github">
+          <p class="skill__name">Github</p>
+        </div>
+      </article>
 
-      </section>
+      <article class="skills__soft card">
+        <h4 class="skills__subtitle">Soft Skills</h4>
+        <div class="skill__card">
+          <img class="skill__icon" src="" alt="">
+          <p class="skill__name">Autonomie</p>
+        </div>
+        <div class="skill__card">
+          <img class="skill__icon" src="" alt="">
+          <p class="skill__name">Coopération</p>
+        </div>
+        <div class="skill__card">
+          <img class="skill__icon" src="" alt="">
+          <p class="skill__name">Organisation</p>
+        </div>
+        <div class="skill__card">
+          <img class="skill__icon" src="" alt="">
+          <p class="skill__name">Adaptation</p>
+        </div>
+        <div class="skill__card">
+          <img class="skill__icon" src="" alt="">
+          <p class="skill__name">Gestion du stress</p>
+        </div>
+      </article>
+    </section>
 
-      <section class="soft">
+    <h2>Mes projets</h2>
+    <section class="projects card">
+      <article class="project__contain">
+        <h4 class="project__title">My Tweeter</h4>
+        <span class="project__languages">PHP - SQL - Tailwind</span>
+        <img class="project__image" src="" alt="">
+      </article>
+    </section>
 
-      </section>
-    </article>
-
-    <article class="projects">
-    </article>
-
-    <article id="journey" class="journey">
+    <section id="journey" class="journey">
+      <h2>Mon parcours :</h2>
       <section class="journey__studies">
-        <div class="journey__container studies__Wac">
-          <h3>Web@cademie by Epitech</h3>
-          <p>2024 - 2026</p>
-          <p><span>Diplôme RNCP :</span> développeur WEB</p>
-          <p>Obtention prévu en 2026</p>
+        <h3>Mes formations</h3>
+        <div class="journey__container studies__Wac card">
+          <h3 class="journey__name">Web@cademie by Epitech</h3>
+          <p class="journey__date">2024 - 2026</p>
+          <p class="journey__title"><span>Diplôme RNCP :</span> développeur WEB</p>
+          <p class="journey__end">Obtention prévu en 2026</p>
         </div>
 
-        <div class="journey__container studies__Bafa">
-          <h3>BAFA</h3>
-          <p>Avril 2017</p>
-          <p><span>Diplôme :</span> brevet d'aptitude aux fonctions d'animateur</p>
-          <p>Obtention du BAFA</p>brevet
+        <div class="journey__container studies__Bafa card">
+          <h3 class="journey__name">BAFA</h3>
+          <p class="journey__date">Avril 2017</p>
+          <p class="journey__title"><span>Diplôme :</span> brevet d'aptitude aux fonctions d'animateur</p>
+          <p class="journey__end">Obtention du BAFA</p>
         </div>
 
-        <div class="journey__container studies__LHT">
-          <h3>Lycée Hôtelier du Touquet</h3>
-          <p>2011 - 2014</p>
-          <p><span>Diplôme :</span> service et commercialisation en restauration</p>
-          <p>Obtention du BEP en 2013</p>
-          <p>Obtention du BAC en 2014</p>
+        <div class="journey__container studies__LHT card">
+          <h3 class="journey__name">Lycée Hôtelier du Touquet</h3>
+          <p class="journey__date">2011 - 2014</p>
+          <p class="journey__title"><span>Diplôme :</span> service et commercialisation en restauration</p>
+          <p class="journey__end">Obtention du BEP en 2013</p>
+          <p class="journey__end">Obtention du BAC en 2014</p>
         </div>
       </section>
 
       <section class="journey__pro-exp">
-        <div class="journey__container pro-exp__Wac">
-          <h3>Web@cademie by Epitech</h3>
-          <p>Novembre 2024 à Ajourd'hui</p>
-          <p>Acquisition de compétences dans le développement Web</p>
-          <p>Travail pratique en autonomie grâce au travail en projets, cette formation nous apprend à travailler comme
-            en entreprise. Apprentissage de plusieurs languages (PHP, Javascript, SQL, etc.)</p>
+        <h3>Mes expériences</h3>
+
+        <div class="journey__container pro-exp__Wac card">
+          <h3 class="journey__name">Web@cademie by Epitech</h3>
+          <span class="journey__date">Novembre 2024 à Ajourd'hui</p>
+            <p class="journey__text journey__text--hidden">Acquisition de compétences dans le développement Web<br>
+              Travail pratique en autonomie grâce au travail en projets, cette formation nous apprend à travailler comme
+              en entreprise. Apprentissage de plusieurs languages (PHP, Javascript, SQL, etc.)</p>
         </div>
 
-        <div class="journey__container pro-exp__Flore">
-          <h3>Le Flore, Cambrai</h3>
-          <h4>Serveur de Bar - Brasserie</h4>
-          <p>Juillet 2020 - Octobre 2024</p>
-          <p>Cet emploi m’a amené plus de responsabilités (Gestion des stocks et
+        <div class="journey__container pro-exp__Flore card">
+          <h3 class="journey__name">Le Flore, Cambrai</h3>
+          <h4 class="journey__job">Serveur de Bar - Brasserie</h4>
+          <span class="journey__date">Juillet 2020 - Octobre 2024</span>
+          <p class="journey__text journey__text--hidden">Cet emploi m’a amené plus de responsabilités (Gestion des
+            stocks et
             commandes fournisseurs) ; J’ai également été amené à travailler seul
             mais aussi avec une équipe sous ma direction.</p>
         </div>
 
-        <div class="journey__container pro-exp__Flambee">
-          <h3>La Flambée, Cambrai</h3>
-          <h4>Serveur de restaurant</h4>
-          <p>Juin 2018 - Juillet 2020</p>
-          <p>Lors de cet emploi, j’ai appris à être en contact avec la clientèle mais
+        <div class="journey__container pro-exp__Flambee card">
+          <h3 class="journey__name">La Flambée, Cambrai</h3>
+          <h4 class="journey__job">Serveur de restaurant</h4>
+          <span class="journey__date">Juin 2018 - Juillet 2020</span>
+          <p class="journey__text journey__text--hidden">Lors de cet emploi, j’ai appris à être en contact avec la
+            clientèle mais
             surtout à réussir à répondre à ses besoins. J’ai également appris à
             m’adapter dans toutes situations.</p>
         </div>
 
-        <div class="journey__container pro-exp__Ifac">
-          <h3>IFAC Nord, Cambrai</h3>
-          <h4>Animateur périscolaire </h4>
-          <p>Septembre 2014 - Juin 2018</p>
-          <p>Après un service civique chez IFAC Nord, un contrat m'a été proposé.</p>
-          <p>Cette emploiu m'aura permit de financer mon permis après ma scolarité (obligatoire en restauration) en plus
-            de me permettre de m'imisser dans le monde du travail !</p>
+        <div class="journey__container pro-exp__Ifac card">
+          <h3 class="journey__name">IFAC Nord, Cambrai</h3>
+          <h4 class="journey__job">Animateur périscolaire </h4>
+          <span class="journey__date">Septembre 2014 - Juin 2018</p>
+            <p class="journey__text journey__text--hidden">Après un service civique chez IFAC Nord, un contrat m'a été
+              proposé.<br>
+              Cette emploi m'aura permit de financer mon permis après ma scolarité (obligatoire en restauration) en plus
+              de me permettre de m'imisser dans le monde du travail !</p>
         </div>
 
       </section>
 
 
-    </article>
+    </section>
 
-    <article id="contact" class="contact">
-      <form action="">
+    <section id="contact" class="contact card">
+      <h2>Me contacter</h2>
+      <form class="contact__form" action="" method="get">
+        <label for="name">Entrez votre nom :</label>
+        <input class="contact__input" id="name" type="text">
 
+        <label for="email">Entrez votre adresse email :</label>
+        <input class="contact__input" id="email" type="email">
+
+        <label for="msg">Entrez votre message :</label>
+        <input class="contact__input" id="msg" type="textarea">
+
+        <input class="contact__input button" type="submit" name="submit" id="submit" value="Envoyer">
       </form>
-    </article>
+    </section>
 
   </main>
 
   <footer>
     <h3>By Corentin Marliere !</h3>
+    <p>Icons by <a href="https://icones8.fr/">Icons8</a></p>
     <p> © Corentin Marlière. Tous droits réservés.</p>
   </footer>
 

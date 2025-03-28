@@ -28,8 +28,10 @@ main {
   border: 1px solid var(--border);
   /* border: none; */
   border-radius: var(--radius);
-  padding: 10px;
+  padding: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Animation fluide */
 }
 
 button:hover {
@@ -37,12 +39,12 @@ button:hover {
 }
 
 button a {
-color: var(--primary-foreground);
-text-decoration: none;
+  color: var(--primary-foreground);
+  text-decoration: none;
 }
 
 
-article {
+.card {
   background-color: var(--card);
   color: var(--card-foreground);
   border: 1px solid var(--border);
@@ -56,15 +58,6 @@ article {
 }
 
 @media screen and (min-width: 768px) {
-  article {
-
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 1024px) {
   article {
 
     flex-direction: row;
@@ -105,3 +98,17 @@ article {
 }
 
 /*-- A propos -- */
+
+
+/*-- Compétences -- */
+
+
+/*-- Projets -- */
+
+
+/*-- Expériences -- */
+.journey__text--hidden {
+  display: none;
+}
+
+/*-- Contact -- */

@@ -1,3 +1,7 @@
+import Tag from "@/components/Tag";
+
+const technologies = ["HTML", "CSS", "Javascript", "Java", "REACT", "NEXT"];
+
 export default function Home() {
   return (
     <div className="flex items-center justify-center min-h-screen p-8 bg-linear-to-br from-[#667eea] to-[#764ba2]">
@@ -28,6 +32,11 @@ export default function Home() {
           >
             Me contacter
           </a>
+        </div>
+        <div className="flex flex-wrap justify-center gap-4 mt-8">
+          {technologies.map((tech, index) => (
+            <Tag key={index}>{tech}</Tag>
+          ))}
         </div>
       </div>
     </div>

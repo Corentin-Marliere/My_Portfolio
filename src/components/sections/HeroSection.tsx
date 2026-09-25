@@ -1,11 +1,10 @@
-import Tag from "@/components/Tag";
+import TechMarquee from "../TechMarquee";
 
 export default function HeroSection() {
-  const technologies = ["HTML", "CSS", "Javascript", "Java", "REACT", "NEXT"];
-
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen p-8 text-center">
-      <div className="max-w-200">
+    <section className="flex flex-col items-center justify-center min-h-screen py-16 text-center overflow-hidden">
+
+      <div className="max-w-200 px-6">
         <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-[1.2]">
           Bonjour, je suis{" "}
           <span className="text-[#ffd700] block">Corentin MARLIERE</span>
@@ -13,14 +12,10 @@ export default function HeroSection() {
         <p className="text-xl md:text-2xl font-medium mb-6 opacity-90">
           Etudiant Développeur Web et Web mobile !
         </p>
-        <p className="text-base md:text-lg mb-10 opacity-[0.85] leading-[1.8]">
+        <p className="text-base md:text-lg mb-8 opacity-[0.85] leading-[1.8]">
           Je crée des applications web modernes, performantes et accessibles
         </p>
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
-          {technologies.map((tech, index) => (
-            <Tag key={index}>{tech}</Tag>
-          ))}
-        </div>
+
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a
             href="#projects"
@@ -35,6 +30,10 @@ export default function HeroSection() {
             Me contacter
           </a>
         </div>
+      </div>
+
+      <div className="w-full mt-14 md:mt-20 md:-rotate-2 md:scale-105">
+        <TechMarquee />
       </div>
     </section>
   );

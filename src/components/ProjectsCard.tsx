@@ -101,7 +101,7 @@ export default function ProjectCard({ data }: ProjectCardProps) {
                 </div>
               </div>
             </div>
-            <div className="flex gap-4 mt-6">
+            <div className="flex justify-center gap-4 mt-6">
               {data.githubURL && (
                 <a
                   href={data.githubURL}

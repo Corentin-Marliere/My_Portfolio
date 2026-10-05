@@ -67,6 +67,11 @@ export default function ContactSection() {
   return (
     <section id="contact" className="max-w-7xl mx-auto px-6 py-20">
       <div className="text-center mb-12">
+        <p className="font-mono text-sm tracking-wider font-semibold text-[#ffd700] mb-2 inline-flex items-center gap-1.5">
+          <span className="text-gray-300">&lt;</span>
+          <span className="text-[#ffd700]">Contact</span>
+          <span className="text-gray-300">/&gt;</span>
+        </p>
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
           Me Contacter
         </h2>

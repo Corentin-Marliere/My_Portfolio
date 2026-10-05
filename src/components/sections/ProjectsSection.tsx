@@ -184,9 +184,16 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="max-w-7xl mx-auto px-6 py-16">
-      <h2 className="text-3xl font-bold text-white mb-8 text-center">
-        Mes Projets
-      </h2>
+      <div className="text-center mb-8">
+        <p className="font-mono text-sm tracking-wider font-semibold text-[#ffd700] mb-2 inline-flex items-center gap-1.5">
+          <span className="text-gray-300">&lt;</span>
+          <span className="text-[#ffd700]">Projects</span>
+          <span className="text-gray-300">/&gt;</span>
+        </p>
+        <h2 className="text-3xl font-bold text-white">
+          Mes Projets
+        </h2>
+      </div>
 
       {/* ========================= */}
       {/*       VERSION MOBILE      */}

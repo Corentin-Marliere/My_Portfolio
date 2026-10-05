@@ -121,8 +121,10 @@ export default function CompetenciesSection() {
     <section id="competences" className="max-w-7xl mx-auto px-6 py-20">
       {/* Section Header */}
       <div className="mb-12">
-        <p className="font-mono text-xs sm:text-sm text-[#ffd700] font-semibold tracking-wider mb-2">
-          {"// RÉFÉRENTIEL DE COMPÉTENCES RNCP"}
+        <p className="font-mono text-sm tracking-wider font-semibold text-cyan-400 mb-2 flex items-center gap-1.5">
+          <span className="text-gray-300">&lt;</span>
+          <span className="text-cyan-400">Competencies</span>
+          <span className="text-gray-300">/&gt;</span>
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
           Compétences validées

@@ -65,7 +65,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="max-w-6xl mx-auto px-6 py-20">
+    <section id="contact" className="max-w-7xl mx-auto px-6 py-20">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
           Me Contacter
@@ -80,8 +80,8 @@ export default function ContactSection() {
       {/* TERMINAL UBUNTU */}
       {/* =============== */}
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-        <div className="hidden lg:flex rounded-2xl overflow-hidden border border-white/15 bg-[#0a1820]/95 shadow-2xl font-mono text-sm sm:text-base flex-col justify-between h-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
+        <div className="hidden lg:flex rounded-2xl overflow-hidden border border-white/15 bg-[#0a1820]/95 shadow-2xl font-mono text-sm sm:text-base flex-col justify-between h-full min-w-0">
           <div className="relative bg-[#14232c] px-4 sm:px-6 py-3 flex items-center justify-between border-b border-white/10 select-none">
             <div className="flex items-center z-10">
               <span className="px-2.5 py-1 rounded-md bg-white/5 hover:bg-white/10 text-gray-300 text-xs sm:text-sm font-mono cursor-pointer transition-colors">
@@ -108,8 +108,8 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div className="p-6 sm:p-8 text-gray-200 flex flex-col justify-between flex-1 gap-6">
-            <div className="space-y-3.5 leading-relaxed">
+          <div className="p-6 sm:p-8 text-gray-200 flex flex-col justify-between flex-1 gap-6 min-w-0">
+            <div className="space-y-3.5 leading-relaxed min-w-0">
               <div>
                 <span className="text-emerald-400 font-bold">➜</span>{" "}
                 <span className="text-cyan-400 font-bold">~</span>{" "}
@@ -130,29 +130,29 @@ export default function ContactSection() {
                 -d <span className="text-white">&#39;{"{"}</span>
               </div>
 
-              <div className="pl-8 sm:pl-12 space-y-2 text-xs sm:text-sm md:text-base">
-                <p className="wrap-break-words">
+              <div className="pl-8 sm:pl-12 space-y-2 text-xs sm:text-sm md:text-base min-w-0">
+                <p className="break-all">
                   <span className="text-cyan-300">&quot;nom&quot;</span>:{" "}
                   <span className="text-amber-200">
                     &quot;{formData.name || "..."}&quot;
                   </span>
                   ,
                 </p>
-                <p className="wrap-break-word">
+                <p className="break-all">
                   <span className="text-cyan-300">&quot;email&quot;</span>:{" "}
                   <span className="text-amber-200">
                     &quot;{formData.email || "..."}&quot;
                   </span>
                   ,
                 </p>
-                <p className="wrap-break-words">
+                <p className="break-all">
                   <span className="text-cyan-300">&quot;objet&quot;</span>:{" "}
                   <span className="text-amber-200">
                     &quot;{formData.subject || "..."}&quot;
                   </span>
                   ,
                 </p>
-                <div className="wrap-break-words">
+                <div className="break-all">
                   <span className="text-cyan-300">&quot;message&quot;</span>:{" "}
                   <span className="text-amber-200">
                     {!formData.message ? (
@@ -161,7 +161,7 @@ export default function ContactSection() {
                       <span>
                         &quot;
                         {formData.message.split("\n").map((line, idx, arr) => (
-                          <span key={idx}>
+                          <span key={idx} className="break-all">
                             {line}
                             {idx < arr.length - 1 && (
                               <>

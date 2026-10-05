@@ -175,11 +175,11 @@ export default function ProjectsSection() {
   }, [isExpanded]);
 
   const scrollNext = () => {
-    desktopCarouselRef.current?.scrollBy({ left: 344, behavior: "smooth" });
+    desktopCarouselRef.current?.scrollBy({ left: 352, behavior: "smooth" });
   };
 
   const scrollPrev = () => {
-    desktopCarouselRef.current?.scrollBy({ left: -344, behavior: "smooth" });
+    desktopCarouselRef.current?.scrollBy({ left: -352, behavior: "smooth" });
   };
 
   return (
@@ -226,9 +226,9 @@ export default function ProjectsSection() {
 
       <div className="hidden md:block w-full">
         {!isExpanded ? (
-          <div className="flex flex-wrap justify-center gap-6 w-full">
+          <div className="flex flex-wrap justify-center gap-8 w-full max-w-262 mx-auto">
             {mockProjects.slice(0, 3).map((project) => (
-              <div key={project.id} className="w-80">
+              <div key={project.id} className="w-[320px]">
                 <ProjectCard data={project} />
               </div>
             ))}
@@ -238,7 +238,7 @@ export default function ProjectsSection() {
             <div
               ref={desktopCarouselRef}
               onScroll={updateScrollButtons}
-              className="grid grid-rows-2 grid-flow-col auto-cols-80 gap-6 overflow-x-auto scroll-smooth scrollbar-none [&::-webkit-scrollbar]:hidden max-w-255 px-2 py-4"
+              className="grid grid-rows-2 grid-flow-col auto-cols-80 gap-8 overflow-x-auto scroll-smooth scrollbar-none [&::-webkit-scrollbar]:hidden w-full max-w-262 px-3 py-3"
             >
               {mockProjects.map((project) => (
                 <div key={project.id} className="w-[320px]">
@@ -251,7 +251,7 @@ export default function ProjectsSection() {
 
         {/* Boutons PC */}
         {mockProjects.length > 3 && (
-          <div className="flex items-center justify-center gap-4 mt-12">
+          <div className="flex items-center justify-center gap-4 mt-6">
             {isExpanded && (
               <button
                 onClick={scrollPrev}

@@ -24,6 +24,9 @@ export default function ProjectCard({ data }: ProjectCardProps) {
 
   return (
     <>
+      {/* ===================== */}
+      {/*         CARTE         */}
+      {/* ===================== */}
       <article
         onClick={() => setIsOpen(true)}
         className="border border-white/10 rounded-xl p-4 cursor-pointer hover:border-white/30 hover:scale-[1.02] transition-all"
@@ -35,22 +38,31 @@ export default function ProjectCard({ data }: ProjectCardProps) {
           height={400}
           className="rounded-lg object-cover w-full h-48"
         />
-        <h2 className="text-xl font-bold text-white my-2">{data.title}</h2>
-        <div className="flex flex-wrap gap-2 my-2">
+        <h2 className="text-xl font-bold text-white text-center my-2">
+          {data.title}
+        </h2>
+        <div className="flex flex-wrap justify-center gap-1.5 my-2">
           {data.tags.map((f, i) => (
-            <Tag key={i}>{f}</Tag>
+            <Tag key={i} size="sm">
+              {f}
+            </Tag>
           ))}
         </div>
         {data.competencies[0] && (
-          <p className="text-sm text-gray-400 mt-2">
-            Compétence principale :<br />
-            <span className="text-white font-medium">
-              • {data.competencies[0]}
+          <div className="mt-3 pt-3 border-t border-white/10 text-center">
+            <span className="text-[11px] uppercase tracking-wider text-white/50 block font-semibold">
+              Compétence clé
             </span>
-          </p>
+            <p className="text-xs text-[#ffd700] font-medium mt-0.5 line-clamp-2">
+              {data.competencies[0]}
+            </p>
+          </div>
         )}
       </article>
 
+      {/* ===================== */}
+      {/*         MODALE        */}
+      {/* ===================== */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4"
@@ -62,7 +74,7 @@ export default function ProjectCard({ data }: ProjectCardProps) {
           >
             <div>
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-2xl font-bold text-white">{data.title}</h3>
+                <h3 className="text-2xl font-bold text-white ">{data.title}</h3>
                 <button
                   onClick={() => setIsOpen(false)}
                   className="text-gray-400 hover:text-white text-xl p-1 font-bold"
@@ -86,22 +98,32 @@ export default function ProjectCard({ data }: ProjectCardProps) {
                 <h4 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2">
                   Technologies :
                 </h4>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap justify-center gap-2 mb-6">
                   {data.tags.map((f, i) => (
-                    <Tag key={i}>{f}</Tag>
+                    <Tag key={i} size="md">
+                      {f}
+                    </Tag>
                   ))}
                 </div>
                 <h4 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2">
                   Compétences RNCP :
                 </h4>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {data.competencies.map((f, i) => (
-                    <Tag key={i}>{f}</Tag>
+                <ul className="space-y-2">
+                  {data.competencies.map((comp, i) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-3 p-3 rounded-lg bg-white/5 border border-white/10 text-sm text-gray-200"
+                    >
+                      <span className="text-emerald-400 font-bold shrink-0">
+                        ✓
+                      </span>
+                      <span>{comp}</span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             </div>
-            <div className="flex justify-center gap-4 mt-6">
+            <div className="flex justify-center items-center gap-4 mt-8">
               {data.githubURL && (
                 <a
                   href={data.githubURL}

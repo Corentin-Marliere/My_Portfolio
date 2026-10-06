@@ -136,7 +136,7 @@ export default function AboutSection() {
   return (
     <section
       id="parcours"
-      className="max-w-7xl mx-auto px-6 py-24 relative overflow-hidden"
+      className="max-w-7xl mx-auto px-6 py-24 relative overflow-hidden scroll-mt-24"
     >
       <div className="mb-14">
         <p className="font-mono text-sm tracking-wider font-semibold text-cyan-400 mb-2 flex items-center gap-1.5">

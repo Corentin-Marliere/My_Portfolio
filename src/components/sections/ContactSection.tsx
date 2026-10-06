@@ -65,7 +65,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="max-w-7xl mx-auto px-6 py-20">
+    <section id="contact" className="max-w-7xl mx-auto px-6 py-20 scroll-mt-24">
       <div className="text-center mb-12">
         <p className="font-mono text-sm tracking-wider font-semibold text-[#ffd700] mb-2 inline-flex items-center gap-1.5">
           <span className="text-gray-300">&lt;</span>

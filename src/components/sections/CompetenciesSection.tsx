@@ -118,7 +118,7 @@ export default function CompetenciesSection() {
   ];
 
   return (
-    <section id="competences" className="max-w-7xl mx-auto px-6 py-20">
+    <section id="competences" className="max-w-7xl mx-auto px-6 py-20 scroll-mt-24">
       {/* Section Header */}
       <div className="mb-12">
         <p className="font-mono text-sm tracking-wider font-semibold text-cyan-400 mb-2 flex items-center gap-1.5">

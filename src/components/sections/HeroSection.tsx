@@ -2,7 +2,7 @@ import TechMarquee from "../TechMarquee";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen py-16 text-center overflow-hidden">
+    <section id="hero" className="flex flex-col items-center justify-center min-h-screen py-16 text-center overflow-hidden scroll-mt-24">
 
       <div className="max-w-200 px-6">
         <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-[1.2]">

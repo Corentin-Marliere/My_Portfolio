@@ -183,7 +183,7 @@ export default function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="max-w-7xl mx-auto px-6 py-16">
+    <section id="projects" className="max-w-7xl mx-auto px-6 py-16 scroll-mt-24">
       <div className="text-center mb-8">
         <p className="font-mono text-sm tracking-wider font-semibold text-[#ffd700] mb-2 inline-flex items-center gap-1.5">
           <span className="text-gray-300">&lt;</span>

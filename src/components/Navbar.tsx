@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 
 type NavItem = {
   label: string;
@@ -17,22 +18,20 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [activeSection, setActiveSection] = useState("#hero");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const isScrollingRef = useRef(false);
   const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  // ScrollSpy précis basé sur getBoundingClientRect
   useEffect(() => {
     const handleScroll = () => {
-      // Détection de détachement du fond au scroll
       setIsScrolled(window.scrollY > 40);
 
-      // Si l'utilisateur a cliqué sur un lien, on laisse le défilement fluide se terminer sans flash intermédiaire
       if (isScrollingRef.current) return;
 
-      const triggerPoint = window.innerHeight * 0.35; // Point de détection à 35% du haut de l'écran
+      const triggerPoint = window.innerHeight * 0.35;
 
       let currentSection = "#hero";
       for (const item of NAV_ITEMS) {
@@ -45,7 +44,6 @@ export default function Navbar() {
         }
       }
 
-      // Si on est tout en bas de page, activer automatiquement la section Contact
       if (
         window.innerHeight + window.scrollY >=
         document.documentElement.scrollHeight - 50
@@ -64,30 +62,24 @@ export default function Navbar() {
     };
   }, []);
 
-  // Clic avec défilement fluide garanti (scrollIntoView)
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
+    href: string,
   ) => {
     e.preventDefault();
     const target = document.querySelector(href);
 
     if (target) {
-      // Verrouille temporairement le scrollSpy pour éviter les flashs intermédiaires pendant le voyage
       isScrollingRef.current = true;
       setActiveSection(href);
       setIsMobileMenuOpen(false);
 
-      // Défilement fluide natif
       target.scrollIntoView({ behavior: "smooth", block: "start" });
 
-      // Retire le focus du bouton pour éviter la persistance d'une bordure de focus navigateur
       (e.currentTarget as HTMLElement)?.blur();
 
-      // Mettre à jour l'URL sans rechargement
       window.history.pushState(null, "", href);
 
-      // Réactive le scrollSpy une fois le défilement fluide achevé (~800ms)
       if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
       scrollTimeoutRef.current = setTimeout(() => {
         isScrollingRef.current = false;
@@ -95,11 +87,15 @@ export default function Navbar() {
     }
   };
 
+  if (pathname?.startsWith("/studio")) {
+    return null;
+  }
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
-      {/* ========================================================= */}
-      {/* 1. VERSION DESKTOP : Capsule flottante centrée (Pill)     */}
-      {/* ========================================================= */}
+      {/* =============== */}
+      {/* DESKTOP VERSION */}
+      {/* =============== */}
       <nav
         aria-label="Navigation principale"
         className={`hidden md:flex pointer-events-auto fixed left-1/2 -translate-x-1/2 items-center gap-1 rounded-full px-4 py-2 transition-all duration-300 ${
@@ -108,7 +104,6 @@ export default function Navbar() {
             : "top-6 bg-transparent border border-transparent shadow-none backdrop-blur-none"
         }`}
       >
-        {/* Liens de navigation */}
         <div className="flex items-center gap-1 text-sm font-mono">
           {NAV_ITEMS.map((item) => {
             const isActive = activeSection === item.href;
@@ -137,7 +132,6 @@ export default function Navbar() {
           })}
         </div>
 
-        {/* Bouton Téléchargement CV discret */}
         <div className="pl-2 ml-1 border-l border-white/10 flex items-center">
           <a
             href="/docs/CV_Corentin_Marliere.pdf"
@@ -163,9 +157,9 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* ========================================================= */}
-      {/* 2. VERSION MOBILE : Barre flottante compacte avec tiroir  */}
-      {/* ========================================================= */}
+      {/* ============== */}
+      {/* MOBILE VERSION */}
+      {/* ============== */}
       <div className="md:hidden pointer-events-auto fixed top-3 left-4 right-4">
         <div
           className={`rounded-full px-4 py-2.5 flex items-center justify-between transition-all duration-300 ${
@@ -174,7 +168,6 @@ export default function Navbar() {
               : "bg-transparent border border-transparent shadow-none backdrop-blur-none"
           }`}
         >
-          {/* Logo / Initiales */}
           <a
             href="#hero"
             onClick={(e) => handleNavClick(e, "#hero")}
@@ -185,7 +178,6 @@ export default function Navbar() {
             <span className="text-gray-500">/&gt;</span>
           </a>
 
-          {/* Contrôles droits : CV + Burger */}
           <div className="flex items-center gap-2">
             <a
               href="/docs/CV_Corentin_Marliere.pdf"
@@ -235,7 +227,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Menu déroulant Mobile */}
         {isMobileMenuOpen && (
           <div className="mt-2.5 bg-[#0a1526]/95 backdrop-blur-xl border border-white/10 rounded-2xl p-5 shadow-2xl flex flex-col gap-2 font-mono text-sm">
             {NAV_ITEMS.map((item) => {

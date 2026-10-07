@@ -4,8 +4,13 @@ import CompetenciesSection from "@/components/sections/CompetenciesSection";
 import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
+import { getProjects } from "@/sanity/queries";
 
-export default function Home() {
+export const revalidate = 60;
+
+export default async function Home() {
+  const sanityProjects = await getProjects();
+
   return (
     <main className="relative min-h-screen bg-[#060b13] text-white overflow-x-hidden">
       <StarryBackground />
@@ -13,7 +18,7 @@ export default function Home() {
       <div className="relative z-10">
         <HeroSection />
         <AboutSection />
-        <ProjectsSection />
+        <ProjectsSection initialProjects={sanityProjects} />
         <CompetenciesSection />
         <ContactSection />
       </div>

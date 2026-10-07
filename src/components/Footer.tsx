@@ -17,11 +17,11 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#070d18] border-t border-cyan-500/20 text-gray-300 overflow-hidden">
+    <footer className="relative bg-[#070d18] border-t border-cyan-500/20 text-gray-300 overflow-hidden shrink-0">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 max-w-4xl h-px bg-linear-to-r from-transparent via-cyan-400/40 to-transparent pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-6 py-6 sm:py-8">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-5">
+      <div className="max-w-6xl mx-auto px-6 py-3 sm:py-6">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-5">
           <div className="flex items-center gap-2.5">
             <button
               onClick={scrollToTop}
@@ -84,7 +84,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-6 pt-5 border-t border-white/5 text-center">
+        <div className="mt-3 pt-2.5 sm:mt-5 sm:pt-4 border-t border-white/5 text-center">
           <p className="text-xs text-gray-400 font-mono">
             © {new Date().getFullYear()} Corentin MARLIERE. Tous droits
             réservés.

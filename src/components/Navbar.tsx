@@ -87,7 +87,7 @@ export default function Navbar() {
     }
   };
 
-  if (pathname?.startsWith("/studio")) {
+  if (pathname !== "/") {
     return null;
   }
 

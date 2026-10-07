@@ -82,7 +82,7 @@ export default function HeroSection() {
         )}
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-8 lg:gap-10 items-start my-auto">
-          <div className="lg:col-span-7 text-center lg:text-left flex flex-col items-center lg:items-start space-y-50 sm:space-y-5">
+          <div className="lg:col-span-7 text-center lg:text-left flex flex-col items-center lg:items-start space-y-5 sm:space-y-5">
             <div
               ref={badgeRef}
               className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-950/40 border border-cyan-500/30 text-xs font-mono text-cyan-300 shadow-xs shadow-cyan-400/20"

@@ -29,7 +29,7 @@ export default function ProjectCard({ data }: ProjectCardProps) {
       {/* ===================== */}
       <article
         onClick={() => setIsOpen(true)}
-        className="border border-white/10 rounded-xl p-4 cursor-pointer hover:border-white/30 hover:scale-[1.02] transition-all"
+        className="bg-[#0c1322]/85 backdrop-blur-md border border-white/10 rounded-xl p-4 cursor-pointer hover:border-cyan-400/40 hover:scale-[1.02] hover:shadow-[0_0_25px_rgba(56,189,248,0.12)] transition-all shadow-xl"
       >
         <Image
           src={data.coverURL}
@@ -69,7 +69,7 @@ export default function ProjectCard({ data }: ProjectCardProps) {
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="bg-[#1a1a2e] p-6 rounded-xl max-w-lg w-full max-h-[90vh] overflow-y-auto"
+            className="bg-[#0c1322] border border-white/10 p-6 rounded-xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div>

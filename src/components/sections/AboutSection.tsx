@@ -232,7 +232,7 @@ export default function AboutSection() {
 
             <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
               <a
-                href="/CV_Corentin_Marliere.pdf"
+                href="/docs/CV_Corentin_Marliere.pdf"
                 download="CV_Corentin_Marliere.pdf"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#ffd700] hover:bg-[#ffd700]/90 text-slate-950 font-bold text-sm tracking-wide shadow-lg shadow-[#ffd700]/15 hover:shadow-[#ffd700]/30 hover:-translate-y-0.5 transition-all cursor-pointer group"
               >

@@ -136,7 +136,7 @@ export default function HeroSection() {
               <div className="relative p-1 sm:p-1.5 rounded-full border-2 border-cyan-400/40 bg-[#0a1526]/65 shadow-[0_0_25px_rgba(56,189,248,0.2)]">
                 <div className="w-44 h-44 sm:w-56 sm:h-56 lg:w-72 lg:h-72 rounded-full overflow-hidden relative border border-white/20">
                   <Image
-                    src="/profile.jpg"
+                    src="/images/profile.jpg"
                     alt="Corentin MARLIERE"
                     fill
                     priority

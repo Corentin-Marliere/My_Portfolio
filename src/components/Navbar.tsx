@@ -140,7 +140,7 @@ export default function Navbar() {
         {/* Bouton Téléchargement CV discret */}
         <div className="pl-2 ml-1 border-l border-white/10 flex items-center">
           <a
-            href="/CV_Corentin_Marliere.pdf"
+            href="/docs/CV_Corentin_Marliere.pdf"
             download="CV_Corentin_Marliere.pdf"
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#ffd700] hover:bg-[#ffd700]/90 text-slate-950 font-bold text-xs tracking-wide shadow-md shadow-[#ffd700]/20 hover:scale-105 transition-all cursor-pointer"
             title="Télécharger mon CV (PDF)"
@@ -188,7 +188,7 @@ export default function Navbar() {
           {/* Contrôles droits : CV + Burger */}
           <div className="flex items-center gap-2">
             <a
-              href="/CV_Corentin_Marliere.pdf"
+              href="/docs/CV_Corentin_Marliere.pdf"
               download="CV_Corentin_Marliere.pdf"
               className="px-2.5 py-1 rounded-full bg-[#ffd700] text-slate-950 font-bold text-xs"
             >
@@ -263,7 +263,7 @@ export default function Navbar() {
 
             <div className="pt-3 mt-1 border-t border-white/10">
               <a
-                href="/CV_Corentin_Marliere.pdf"
+                href="/docs/CV_Corentin_Marliere.pdf"
                 download="CV_Corentin_Marliere.pdf"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-[#ffd700] text-slate-950 font-bold text-xs"

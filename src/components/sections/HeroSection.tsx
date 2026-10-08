@@ -150,7 +150,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="w-full mb-4 md:mb-6 md:-rotate-1 md:scale-102">
+      <div className="w-full mb-4 md:mb-6 md:-rotate-2 md:scale-100 transform-gpu backface-hidden">
         <TechMarquee />
       </div>
     </section>

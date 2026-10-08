@@ -103,7 +103,7 @@ export default function HeroSection() {
               <span className="text-cyan-300 font-semibold">
                 Web@cademie by Epitech
               </span>{" "}
-              et alternant Développeur Back chez{" "}
+              et alternant Développeur Back-End chez{" "}
               <span className="text-white font-semibold">Décathlon</span>.
             </p>
 

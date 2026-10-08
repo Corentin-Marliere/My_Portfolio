@@ -103,7 +103,7 @@ export default function HeroSection() {
               <span className="text-cyan-300 font-semibold">
                 Web@cademie by Epitech
               </span>{" "}
-              et alternant Développeur Back chez{" "}
+              et alternant Développeur Back-End chez{" "}
               <span className="text-white font-semibold">Décathlon</span>.
             </p>
 
@@ -136,12 +136,12 @@ export default function HeroSection() {
               <div className="relative p-1 sm:p-1.5 rounded-full border-2 border-cyan-400/40 bg-[#0a1526]/65 shadow-[0_0_25px_rgba(56,189,248,0.2)]">
                 <div className="w-44 h-44 sm:w-56 sm:h-56 lg:w-72 lg:h-72 rounded-full overflow-hidden relative border border-white/20">
                   <Image
-                    src="/images/profile.jpg"
+                    src="/images/profile_picture.jpg"
                     alt="Corentin MARLIERE"
                     fill
                     priority
                     sizes="(max-width: 640px) 176px, (max-width: 1024px) 224px, 288px"
-                    className="object-cover object-top scale-105 group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover object-center scale-100 group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
               </div>
@@ -150,7 +150,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="w-full mb-4 md:mb-6 md:-rotate-1 md:scale-102">
+      <div className="w-full mb-4 md:mb-6 md:-rotate-2 md:scale-100 transform-gpu backface-hidden">
         <TechMarquee />
       </div>
     </section>
